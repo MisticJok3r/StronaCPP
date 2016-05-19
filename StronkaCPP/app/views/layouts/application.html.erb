@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StronkaCPP</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+  <nav>
+    <div class="nav-wrapper white">
+      <a href="#!" class="brand-logo  grey-text text-darken-2">C++ & Javascript</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse grey-text text-darken-2"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="grey-text text-darken-2" href="#">Logowanie</a></li>
+        <li><a class="grey-text text-darken-2" href="#">Rejestracja</a></li>
+        </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a class="grey-text text-darken-2" href="#">Logowanie</a></li>
+        <li><a class="grey-text text-darken-2" href="#">Rejestracja</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+
+  <img id="zdj" class="responsive-img" src="http://wodzislaw-slaski.pl/wp-content/uploads/2015/10/programowanie.jpg">
+
+
+
+  <script type="text/javascript">
+
+    $(".button-collapse").sideNav();
+
+  </script>
+
+
+<%= yield %>
+
+</body>
+</html>
